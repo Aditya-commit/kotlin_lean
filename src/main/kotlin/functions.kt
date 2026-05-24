@@ -14,7 +14,6 @@ fun main(){
         println("Your form has been submitted successfully")
     }
 
-
     val itemsList = asList(1 , 2 , 3 , 23 , 55)
     println(itemsList)
 }

@@ -3,24 +3,24 @@ import kotlin.reflect.typeOf
 
 fun main() {
 
-//    println("Please enter your phone number")
-//    var input = readln()
-//    val inputAsInteger = input.toIntOrNull()
-//
-//    if(inputAsInteger == null) {
-//        println("Please enter a valid phone number")
-//    }
-//    else{
-//        print(inputAsInteger)
-//    }
+    println("Please enter your phone number")
+    var input = readln()
+    val inputAsInteger = input.toIntOrNull()
 
-//
-//    fun sum(a : Int , b : Int) : Int {
-//        return a + b
-//    }
-//
-//    val result = sum(10 , 33)
-//    println("The result is $result")
+    if(inputAsInteger == null) {
+        println("Please enter a valid phone number")
+    }
+    else{
+        print(inputAsInteger)
+    }
+
+
+    fun sum(a : Int , b : Int) : Int {
+        return a + b
+    }
+
+    val result = sum(10 , 33)
+    println("The result is $result")
 
 
 
