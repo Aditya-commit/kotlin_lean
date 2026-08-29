@@ -1,4 +1,5 @@
 import packages.printName
+import packages.printAge
 
 fun main(){
 
@@ -16,4 +17,6 @@ fun main(){
     else{
         println("Please enter the name of the input")
     }
+
+    printAge(23);
 }

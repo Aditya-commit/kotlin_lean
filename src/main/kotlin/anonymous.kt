@@ -6,17 +6,14 @@ fun main(){
 
     println(anonymous(24 , 5))
 
-//    OWN LOCAL RETURN SCOPE EXAMPLE
-fun test(){
-
-    listOf<Int>(12 , 3 , 4 , 6 , 71).map(fun(x : Int) {
-        if(x == 4) return
-
-        println(x)
-    })
-
-    println("Done the map loop");
-}
+    //    OWN LOCAL RETURN SCOPE EXAMPLE
+    fun test(){
+        listOf<Int>(12 , 3 , 4 , 6 , 71).map(fun(x : Int) {
+            if(x == 4) return
+            println(x)
+        })
+        println("Done the map loop");
+    }
 
     test()
 }
