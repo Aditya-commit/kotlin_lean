@@ -5,7 +5,7 @@ enum class DIRECTIONS {
 enum class TRAFFIC_LIGHT(val action : String){
     RED("STOP"),
     YELLOW("READY"),
-    GREEN("START"),
+    GREEN("START")
 }
 
 fun main(){
