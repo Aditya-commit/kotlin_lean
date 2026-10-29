@@ -1,4 +1,4 @@
-class PrimaryConstructor(val name : String , val age : Int ){
+class PrimaryConstructor(val name : String, val age : Int ){
 
     fun displayName(){
         println("Name = $name")

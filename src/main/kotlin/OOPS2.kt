@@ -1,4 +1,4 @@
-class Person(val name : String , val age : Int){
+class Person1(val name : String , val age : Int){
     
     constructor(name : String?) : this(name ?: "Guest" , 1){}
     
@@ -11,7 +11,7 @@ Age - $age""")
 
 fun main(){
     
-    val p = Person("Aditya" , 25)
+    val p = Person1("Aditya" , 25)
     p.printUserDetails()
     
 }
