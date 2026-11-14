@@ -1,3 +1,9 @@
+// Sealed classes and sealed interfaces are used when you want to define a restricted set of possible types.
+
+// They are particularly useful when you want to model states, events, results, or business scenarios where the possibilities are known in advance.
+
+// A sealed class is an abstract class whose direct subclasses are restricted to a known set.
+
 sealed class Result {
 //    WE ARE USING DATA CLASS BECAUSE THE ACTUAL BUSINESS LOGIC WE WILL BE WRITING IN OTHER FUNCTION
     data class Success(val data : String) : Result()
