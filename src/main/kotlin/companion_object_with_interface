@@ -1,0 +1,20 @@
+interface Factory<T> {
+    fun create(name: String): T
+}
+
+class User(val name: String) {
+    // Defines a companion object that implements the Factory interface
+    companion object : Factory<User> {
+        override fun create(name: String): User = User(name)
+    }
+}
+
+fun main() {
+    // Uses the companion object as a Factory
+    val userFactory: Factory<User> = User // AS WE KNOW IF WE USE CLASS NAME THEN IT REFERENCES TO THE COMPANION OBJECT AND SINCE THE COMPANION OBJECT RETURN TYPE IS Factory<T> so we get Factory<User>
+    val newUser = userFactory.create("Example User")
+    println(newUser.name)
+}
+
+
+

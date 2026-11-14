@@ -1,0 +1,30 @@
+class ApiClient {
+    companion object Factory {
+        val client : String = "client"
+    }
+}
+
+class Person(val name : String){
+    
+    companion object {
+        fun createAnonymous() = Person("Anonymous")
+        fun createGuest() = Person("Guest")
+        
+        val msg = "How are you doing ?"
+    }
+}
+
+fun main(){
+    val guest : Person = Person.createGuest();
+    val anonymous : Person.Companion = Person
+    
+    println(anonymous.createAnonymous().name)
+    println(guest.name)
+    println(Person.msg)
+    
+    
+    val http : ApiClient.Factory = ApiClient;
+    println(http.client)
+}
+
+// IF WE ARE USING object name THEN THE RETURN IS <CLASS>.<OBJECT NAME> otherwise the return is <CLASS>.Companion
